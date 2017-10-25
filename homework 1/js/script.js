@@ -24,7 +24,12 @@
 //  })
 // })
 $(document).ready(function () {
+    $('a').addClass('test');
     $('a').on('click', function () {
-        
-    }) 
+       var num = 4;
+       alert(num); 
+    }); 
+    $('ul li').addClass(function(index){
+        return 'item-' + index;
+    });
 });
