@@ -25,3 +25,12 @@ function howArgument(a,b,c) {
 }
 howArgument(1,2,5,'fer');
 
+
+var input = document.getElementById('text');
+input.value = 'arg';
+
+function sendArgument(){
+
+    alert(arguments.length);
+    
+} 
