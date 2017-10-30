@@ -112,7 +112,12 @@ h1,h2{
     height: 450px;
     background-color: white;
 }
-
+.box-block h1,
+form {
+    display: flex;
+    justify-content: center;
+    
+}
 .box-block:nth-child(3) {
     /* justify-content: space-around; */
     background-color: #f7a27b;
