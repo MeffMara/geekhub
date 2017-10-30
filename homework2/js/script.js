@@ -46,22 +46,34 @@ function howArgSend() {
     return console.log(arguments.length);
     
 }
-howArgSend();
-howArgSend(1,2);
-howArgSend('tree',true,1,0.32);
+// howArgSend();
+// howArgSend('tree',true,1,0.32);
+// howArgSend(1,2);
 
 // Функция 2
-function howArgStr(arg1) {
+function howArgStr() {
+    var countTrue = 0;
+    var countFalse = 0;
     for (var i = 0;i < arguments.length; i++) {
-        var count = 1;
-    if (typeof( arguments[i])=='string') {
-            count+=i;
-            alert('String');
-            console.log('Вы ввели строку ',+ count + 'раз');
-            console.log(typeof( arguments[i]));
-        } else {
-            alert('No String');
-            console.log(arguments[i]);
+        if (typeof arguments[i]==='string') {
+            countTrue++;
+            // alert('No String');
+            // console.log('Вы ввели строку ',+ countTrue + 'раз');
+            // console.log(typeof( arguments[i]));
+        } 
     }
-    console.log('Вы ввели строку ',+ count + 'раз');
-}}
+    return countTrue;
+}
+
+// Функция 3
+function sum() {
+    var result = 0;
+  
+    for (var i = 0; i < arguments.length; i++) {
+      result += arguments[i];
+    }
+  
+    return result;
+  }
+// Функция 4
+
