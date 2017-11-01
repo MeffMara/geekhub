@@ -24,12 +24,13 @@
 //  })
 // })
 $(document).ready(function () {
-    $('a').addClass('test');
-    $('a').on('click', function () {
-       var num = 4;
-       alert(num); 
-    }); 
-    $('ul li').addClass(function(index){
-        return 'item-' + index;
+   
+    $('.popup .close_window, .overlay').click(function (){
+    $('.popup, .overlay').css({'opacity': 0, 'visibility': 'hidden'});
     });
+    $('a.signIn').click(function (e){
+    $('.popup, .overlay').css({'opacity': 1, 'visibility': 'visible'});
+    e.preventDefault();
+    });
+ 
 });
