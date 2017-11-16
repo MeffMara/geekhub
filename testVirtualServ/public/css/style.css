@@ -1,0 +1,31 @@
+h1,h2 {
+    text-align: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    box-shadow: 1px 1px 3px gray;
+    margin: 0 auto;
+    width: 30%;
+    height: 280px;
+
+}
+
+input{
+    display: flex;
+    margin-top: 10px;
+    align-self: center;
+    width: 140px;
+}
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}
+
+button{
+    margin-top: 25px;
+    width: 80px;
+    align-self: center;
+    
+}
